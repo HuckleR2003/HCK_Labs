@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HCK_Labs — Marcin Firmuga</title>
+  <meta name="description" content="HCK_Labs — From micrograd to miniGPT. Practical AI projects & developer tools." />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Main Style CSS file -->
+  <link rel="stylesheet" href="../../components/main.css">
+</head>
+<body>
+  <!-- ============== NAVBAR ============== -->
+  <header class="navbar" role="banner" aria-label="Main navigation">
+    <div class="nav-left">
+      <a href="index.html"><div class="logo" id="logo">HCK_<span>Labs</span></div></a>
+    </div>
+    <nav class="nav-right" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#tools">Tools</a>
+      <a href="#notes">Notes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Background images -->
+  <div id="bg-layer-a" class="bg-layer" style="background-image:url('../../assets/images/bg-space-1.jpg')"></div>
+  <div id="bg-layer-b" class="bg-layer" style="background-image:url('../../assets/images/bg-space-2.jpg'); opacity:0;"></div>
+  <div id="bg-overlay" class="bg-overlay" aria-hidden="true"></div>
+
+  <!-- ========= Hero center ========= -->
+  <div class="hero-fixed" id="hero-fixed" role="region" aria-label="Main hero">
+    <div class="logo-small">HCK_<span>Labs</span></div>
+    <h1 id="hero-title" class="hero-title">Building imagine portfolio-education environmentt.</h1>
+    <p id="hero-sub" class="hero-sub">From micrograd proofs to deployable experiments — practical AI for curious builders.</p>
+    <div class="hero-ctas">
+      <a class="btn" href="#projects">View Projects</a>
+      <button class="btn-outline" id="open-gpt">Open hck-GPT</button>
+      <button class="btn-outline" id="open-files">Open HCK_Files manager</button>
+      <button class="btn-outline" id="open-diag">Diagnostic Console</button>
+      <a class="btn-ghost" href="#tools">Explore Tools</a>
+    </div>
+  </div>
+
+  <!-- ========= Invisible sentinels stacked vertically to drive hero bg/text changes. ========= -->
+  <main id="main">
+    <div class="sentinel" data-title="HCK_ — my Educational Repo." data-sub="From micrograd proofs to deployable experiments." data-bg="../../assets/images/bg-space-1.jpg"></div>
+    <div class="sentinel" data-title="From micrograd to miniGPT." data-sub="Autograd, attention and reproducible models." data-bg="../../assets/images/bg-space-2.jpg"></div>
+    <div class="sentinel" data-title="HCK_Labs — practical AI." data-sub="Tools, notebooks and deployments for recruiters to love." data-bg="../../assets/images/bg-space-3.jpg"></div>
+    <!-- ====================================-->
+
+    <!-- AFTER the hero-sentinels -> To normal page -->
+    <!-- STATS -->
+    <section id="highlights" class="section highlights">
+      <div class="container grid grid-4">
+        <div class="stat-card">
+          <div class="stat-num" data-target="5">0</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-target="8230">0</div>
+          <div class="stat-label">Lines of code</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-target="2190">0</div>
+          <div class="stat-label">Days of learning</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-target="2">0</div>
+          <div class="stat-label">Certs in progress</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="container two-col">
+        <div class="about-left">
+          <h2>About me</h2>
+          <ul class="about-list">
+            <li>Technik Informatyk — hands-on AI engineering and security-minded development.</li>
+            <li>Focus: model fundamentals — micrograd → MLP → Transformers → miniGPT.</li>
+            <li>Open-source style: thorough READMEs, notebooks, and reproducible demos.</li>
+            <li>Building dev tools: file explorers, diagnostic consoles, and local LLM experiments.</li>
+            <li>Goal: move from projects to production-ready portfolio for top AI teams.</li>
+          </ul>
+          <a class="btn" href="/about">Read full story</a>
+        </div>
+        <div class="about-right">
+          <img src="../../assets/images/work-in-progress.gif" alt="Work in progress" class="work-screenshot">
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured projects  -->
+    <section id="featured" class="section featured">
+      <div class="container">
+        <h2>Featured projects</h2>
+        <div class="carousel" id="carousel">
+          <button class="carousel-nav prev" aria-label="Previous">‹</button>
+          <div class="carousel-track">
+            <article class="card">
+              <img src="../../assets/images/miniGPT-sample.jpg" alt="miniGPT sample">
+              <h3>miniGPT — Educational decoder</h3>
+              <p>Minimal GPT-style model with notebooks explaining attention and training loops.</p>
+              <div class="card-actions"><a href="#" class="link">Repo</a> <a href="#" class="link">Notebook</a></div>
+            </article>
+            <article class="card">
+              <img src="../../assets/images/transformer-visualizer.jpg" alt="transformer">
+              <h3>Transformer Visualizer</h3>
+              <p>Interactive visualizer that demonstrates attention maps and token flow.</p>
+              <div class="card-actions"><a href="#" class="link">Repo</a> <a href="#" class="link">Demo</a></div>
+            </article>
+            <article class="card">
+              <img src="../../assets/images/recommender-sample.jpg" alt="recommender">
+              <h3>AI Recommender — HuckHub</h3>
+              <p>Recommendation engine prototype built for HuckHub — product matching via embeddings.</p>
+              <div class="card-actions"><a href="#" class="link">Repo</a> <a href="#" class="link">Demo</a></div>
+            </article>
+          </div>
+          <button class="carousel-nav next" aria-label="Next">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects grid -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="ai">AI</button>
+          <button class="filter" data-filter="python">Python</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="tools">Tools</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <article class="project-tile" data-cat="ai python">
+            <h3>miniGPT</h3>
+            <p>Educational GPT with clean notebooks</p>
+            <div class="tags">Python • NumPy • Notebooks</div>
+            <div class="tile-actions"><a class="link" href="#">Repo</a><a class="btn-sm" href="#">Demo</a></div>
+          </article>
+
+          <article class="project-tile" data-cat="web tools">
+            <h3>HCK_Files manager</h3>
+            <p>Explorer-style UI to visualize file relationships (alpha).</p>
+            <div class="tags">JS • UI • Tools</div>
+            <div class="tile-actions"><a class="link" href="#">Repo</a><button class="btn-sm" id="open-files-2">Open</button></div>
+          </article>
+
+          <article class="project-tile" data-cat="ai">
+            <h3>Transformer Visualizer</h3>
+            <p>Attention maps rendered interactively in browser.</p>
+            <div class="tags">JS • D3 • ML</div>
+            <div class="tile-actions"><a class="link" href="#">Repo</a><a class="btn-sm" href="#">Demo</a></div>
+          </article>
+
+          <!-- duplicate tiles -->
+          <article class="project-tile" data-cat="tools"><h3>Diagnostics</h3><p>Connectivity tests & logs.</p><div class="tags">Tools • Dev</div><div class="tile-actions"><a class="link" href="#">Repo</a><a class="btn-sm" href="#">Demo</a></div></article>
+
+          <article class="project-tile" data-cat="python"><h3>My Introductions</h3><p>Scripts & small utilities.</p><div class="tags">Python</div><div class="tile-actions"><a class="link" href="#">Repo</a><a class="btn-sm" href="#">Demo</a></div></article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools -->
+    <section id="tools" class="section tools">
+      <div class="container">
+        <h2>Tools & Labs</h2>
+        <div class="tool-cards">
+          <div class="tool-card">
+            <h3>HCK_Files manager <span class="pill">alpha</span></h3>
+            <p>Explorer for project files — view relations, preview files, export logs.</p>
+            <div class="card-actions"><button class="btn" id="tool-files">Open Manager</button> <a class="link" href="#">Repo</a></div>
+          </div>
+
+          <div class="tool-card">
+            <h3>Diagnostic Console <span class="pill">beta</span></h3>
+            <p>Run connectivity tests (HTML → API → DB) with printable reports.</p>
+            <div class="card-actions"><button class="btn" id="tool-diag">Run Diagnostics</button> <a class="link" href="#">Docs</a></div>
+          </div>
+
+          <div class="tool-card">
+            <h3>hck-GPT <span class="pill">alpha</span></h3>
+            <p>Offline chatbot widget (simple prompts) for demos.</p>
+            <div class="card-actions"><button class="btn" id="tool-gpt">Open Chat</button> <a class="link" href="#">Readme</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notes / Blog -->
+    <section id="notes" class="section notes">
+      <div class="container">
+        <h2>Notes & Blog</h2>
+        <div class="notes-grid">
+          <article class="note-card"><h3>From Factory to AI Engineer — Part 1</h3><p>How I started with micrograd and built a training loop from scratch.</p><a class="link" href="#">Read</a></article>
+          <article class="note-card"><h3>Designing an HCK Files Manager</h3><p>Schema, UX and test strategies for a dev explorer.</p><a class="link" href="#">Read</a></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container two-col">
+        <div>
+          <h2>Contact</h2>
+          <p>Email: <a href="mailto:hcklabs@proton.me">hcklabs@proton.me</a></p>
+          <div class="socials"><a class="link" href="#">GitHub</a> · <a class="link" href="#">LinkedIn</a></div>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <label><span>Your name</span><input name="name" required></label>
+          <label><span>Your email</span><input type="email" name="email" required></label>
+          <label><span>Message</span><textarea name="message" rows="5" required></textarea></label>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container foot-grid">
+        <div>© <strong>HCK_Labs</strong> — Marcin Firmuga</div>
+        <div><a class="link" href="/changelog">CHANGELOG</a> · <a class="link" href="/sitemap">Sitemap</a></div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Modal overlay -->
+  <div id="modal-overlay" class="modal-overlay" aria-hidden="true">
+    <div class="modal">
+      <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+      <div id="modal-content" class="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="../../js/utils.js" defer></script>
+  <script src="../../js/main.js" defer></script>
+</body>
+</html>
