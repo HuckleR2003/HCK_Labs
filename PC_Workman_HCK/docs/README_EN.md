@@ -1,0 +1,1 @@
+# PC Workman - HCK_Labs\n\nVersion 0.1.0 - Base Architecture Skeleton\n\nThis repository contains the skeleton for PC Workman - an educational Windows system monitor + AI assistant.\n

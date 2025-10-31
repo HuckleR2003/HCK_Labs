@@ -1,0 +1,1 @@
+# CHANGELOG\n\n## 0.1.0 - Base Architecture Skeleton\n- Created project skeleton and core mock modules.\n

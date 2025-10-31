@@ -1,0 +1,1 @@
+Dev structure: follow the package layout. Use core.monitor -> logger -> hck_stats_engine -> ui pipeline.

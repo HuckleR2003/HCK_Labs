@@ -1,0 +1,1 @@
+# PC Workman - HCK_Labs\n\nWersja 0.1.0 - Szkielet architektury\n
