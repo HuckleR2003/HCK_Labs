@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Tech Portfolio Demo</title>
+
+    <script>
+        // Mierzenie czasu w momencie, gdy parser HTML napotka tę linijkę (najwcześniej)
+        window.pageLoadStart = performance.now();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@1,700&family=Roboto+Mono:wght@400&family=Source+Code+Pro:wght@400&family=Fira+Code:wght@400&family=Teko:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="welcome-header">
+        <h1>This is a basic HTML structure template.</h1>
+    </header>
+
+    <main class="status-container">
+        <p class="status-item font-teko" id="css-status">.CSS - realtime: Connecting...</p>
+        <p class="status-item font-fira-code" id="js-status">.JS - realtime: Connecting...</p>
+        <p class="status-item font-playfair" id="php-status">.PHP - realtime: Simulating connection...</p>
+        <p class="status-item font-roboto-mono" id="sql-status">.SQL - realtime: Simulating connection...</p>
+    </main>
+
+    <section class="js-output" id="js-output-section">
+        </section>
+    
+    <footer class="realtime-clock" id="realtime-clock">
+        00:00:00
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+</body>
+</html>

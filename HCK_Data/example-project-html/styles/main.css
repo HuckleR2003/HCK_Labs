@@ -1,0 +1,145 @@
+/* * main.css
+ * Zmodyfikowane style dla lepszego profesjonalnego wyglądu (Cyber-Tech Aesthetic)
+ */
+
+:root {
+    --color-primary: #00e5ff; /* Jasny Cyjan */
+    --color-background: #121212; /* Bardzo Ciemne tło */
+    --color-text-light: #e0e0e0;
+    --color-success: #39ff14; /* Neonowy Zielony */
+    --font-size-base: 1.1rem;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+    /* Delikatne tło z siatki (grid) dla tech-look'u */
+    background-image: linear-gradient(to right, #2a2a2a 1px, transparent 1px),
+                      linear-gradient(to bottom, #2a2a2a 1px, transparent 1px);
+    background-size: 40px 40px;
+    color: var(--color-text-light);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* 🌟 Główny Nagłówek (H1) */
+.welcome-header h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: clamp(3rem, 7vw, 6rem); /* Responsywny rozmiar */
+    font-weight: 700;
+    text-align: center;
+    color: #ff9900; /* Neonowy Pomarańcz */
+    text-transform: uppercase;
+    
+    text-shadow: 
+        0 0 15px rgba(255, 153, 0, 0.7), 
+        0 0 30px rgba(255, 153, 0, 0.4);
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--color-primary);
+    transition: all 0.5s ease-out; /* Płynne przejścia */
+}
+
+/* Kontener statusów */
+.status-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 2px solid var(--color-primary);
+    border-radius: 12px;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+}
+
+/* Pojedynczy element statusu */
+.status-item {
+    font-size: var(--font-size-base);
+    padding: 12px 0;
+    margin: 0;
+    border-bottom: 1px dashed #333;
+    transition: color 0.5s, box-shadow 0.5s; /* Dla animacji zmiany statusu */
+}
+
+.status-item:hover {
+    background-color: #2a2a2a;
+    padding-left: 10px;
+}
+
+.status-item:last-child {
+    border-bottom: none;
+}
+
+/* 🌟 Definicje stylów dla poszczególnych czcionek (NOWE I ZMODYFIKOWANE) */
+/* Czcionka dla statusu CSS: Teko (Bardzo techniczna, Condensed) */
+.font-teko {
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+/* Czcionka dla statusu JS: Fira Code (Kluczowa dla profesjonalistów, Ligaruty) */
+.font-fira-code {
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
+    color: #ffd700;
+}
+
+/* Czcionka dla statusu PHP: Playfair Display */
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    color: #ff6600; 
+}
+
+/* Czcionka dla statusu SQL: Roboto Mono */
+.font-roboto-mono {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    color: #00c3ff; 
+}
+
+/* 🌟 Animacja pulsowania dla statusu 'Connecting...' */
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1.0; }
+    100% { opacity: 0.6; }
+}
+
+.status-connecting {
+    animation: pulse 1s infinite alternate;
+}
+
+/* Sekcja wyjściowa JS */
+.js-output {
+    font-family: 'Source Code Pro', monospace;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #000000;
+    border: 1px solid var(--color-success);
+    color: var(--color-success);
+    border-radius: 4px;
+    white-space: pre-wrap;
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+}
+
+/* 🌟 Zegar czasu rzeczywistego w lewym dolnym rogu */
+.realtime-clock {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    color: var(--color-primary);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--color-primary);
+    z-index: 1000;
+}
